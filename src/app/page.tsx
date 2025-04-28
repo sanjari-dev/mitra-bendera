@@ -1,4 +1,6 @@
 import {BackToTopButton} from "@/app/BackToTopButton";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const whatsappNumber = '625814520059';
@@ -14,15 +16,15 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">Mitra Bendera</div>
           <div>
-            <a href="#tentang" className="mx-2 hover:underline">Tentang Kami</a>
-            <a href="#keunggulan" className="mx-2 hover:underline hidden md:inline">Keunggulan</a>
-            <a href="#produk" className="mx-2 hover:underline">Produk</a>
-            <a href="#bahan" className="mx-2 hover:underline hidden md:inline">Bahan & Perawatan</a>
-            <a href="#testimoni" className="mx-2 hover:underline hidden md:inline">Testimoni</a>
-            <a href="#faq" className="mx-2 hover:underline hidden md:inline">FAQ</a>
-            <a href="#marketplace" className="mx-2 hover:underline hidden md:inline">Marketplace</a>
-            <a href="#lokasi" className="mx-2 hover:underline hidden md:inline">Lokasi</a>
-            <a href="#kontak" className="mx-2 hover:underline">Kontak</a>
+            <Link href="#tentang" className="mx-2 hover:underline">Tentang Kami</Link>
+            <Link href="#keunggulan" className="mx-2 hover:underline hidden md:inline">Keunggulan</Link>
+            <Link href="#produk" className="mx-2 hover:underline">Produk</Link>
+            <Link href="#bahan" className="mx-2 hover:underline hidden md:inline">Bahan & Perawatan</Link>
+            <Link href="#testimoni" className="mx-2 hover:underline hidden md:inline">Testimoni</Link>
+            <Link href="#faq" className="mx-2 hover:underline hidden md:inline">FAQ</Link>
+            <Link href="#marketplace" className="mx-2 hover:underline hidden md:inline">Marketplace</Link>
+            <Link href="#lokasi" className="mx-2 hover:underline hidden md:inline">Lokasi</Link>
+            <Link href="#kontak" className="mx-2 hover:underline">Kontak</Link>
           </div>
         </div>
       </nav>
@@ -35,12 +37,12 @@ export default function Home() {
           <div className="text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Kibarkan Semangat Merah Putih</h1>
             <p className="text-xl md:text-2xl mb-8">Dapatkan Bendera Indonesia Berkualitas dari Mitra Bendera</p>
-            <a
+            <Link
               href="#produk"
               className="bg-white text-red-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300"
             >
               Lihat Produk Kami
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -84,7 +86,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Produk Kami</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-              <img src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Besar+Berkibar" alt="Bendera Ukuran Besar" className="w-full h-64 object-cover"/>
+              <Image src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Besar+Berkibar" alt="Bendera Ukuran Besar" className="w-full h-64 object-cover"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Bendera Ukuran Besar</h3>
                 <p className="text-gray-600 mb-4">Ideal untuk tiang bendera di halaman atau gedung.</p>
@@ -95,7 +97,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-              <img src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Sedang+di+Rumah" alt="Bendera Ukuran Sedang" className="w-full h-64 object-cover"/>
+              <Image src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Sedang+di+Rumah" alt="Bendera Ukuran Sedang" className="w-full h-64 object-cover"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Bendera Ukuran Sedang</h3>
                 <p className="text-gray-600 mb-4">Cocok untuk penggunaan di rumah atau acara komunitas.</p>
@@ -106,7 +108,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden">
-              <img src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Kecil+saat+Pawai" alt="Bendera Ukuran Kecil" className="w-full h-64 object-cover"/>
+              <Image src="https://placehold.co/600x400/FF0000/FFFFFF/png?text=Bendera+Kecil+saat+Pawai" alt="Bendera Ukuran Kecil" className="w-full h-64 object-cover"/>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Bendera Ukuran Kecil</h3>
                 <p className="text-gray-600 mb-4">Sempurna untuk dekorasi atau dibawa saat pawai.</p>
@@ -144,11 +146,11 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Apa Kata Pelanggan Kami?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <p className="text-gray-700 italic mb-4">"Bendera dari Mitra Bendera sangat berkualitas, warnanya cerah dan tahan lama. Sangat puas!"</p>
+              <p className="text-gray-700 italic mb-4">Bendera dari Mitra Bendera sangat berkualitas, warnanya cerah dan tahan lama. Sangat puas!</p>
               <p className="text-gray-800 font-semibold">- Budi Santoso</p>
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <p className="text-gray-700 italic mb-4">"Pelayanan cepat dan ramah. Bendera sampai tepat waktu untuk acara kami. Terima kasih Mitra Bendera!"</p>
+              <p className="text-gray-700 italic mb-4">Pelayanan cepat dan ramah. Bendera sampai tepat waktu untuk acara kami. Terima kasih Mitra Bendera!</p>
               <p className="text-gray-800 font-semibold">- Siti Aminah</p>
             </div>
           </div>
@@ -180,12 +182,12 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8 text-gray-800">Temukan Kami di Marketplace</h2>
           <p className="text-lg text-gray-600 mb-8">Anda juga bisa membeli produk kami melalui marketplace favorit Anda:</p>
           <div className="flex justify-center items-center space-x-8">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition duration-300">
+            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition duration-300">
               [Image of Tokopedia Logo Placeholder]
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition duration-300">
+            </Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition duration-300">
               [Image of Shopee Logo Placeholder]
-            </a>
+            </Link>
           </div>
           <p className="mt-4 text-gray-600 text-sm">*(Link dan gambar logo di atas adalah placeholder, ganti dengan link toko dan gambar logo Anda yang sebenarnya)*</p>
         </div>
@@ -210,14 +212,14 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8 text-gray-800">Hubungi Kami Melalui WhatsApp</h2>
           <p className="text-lg text-gray-600 mb-8">Klik tombol di bawah ini untuk langsung terhubung dengan kami via WhatsApp.</p>
-          <a
+          <Link
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
           >
             Chat via WhatsApp
-          </a>
+          </Link>
           <p className="mt-4 text-gray-600">Atau hubungi kami di: {whatsappNumber}</p>
         </div>
       </section>
